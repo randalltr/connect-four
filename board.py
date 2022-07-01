@@ -1,9 +1,10 @@
 cell = "| |"
 rows = 7
-columns = 6
+cols = 6
+column = ""
 
-while rows > 0:
-    while columns > 0:
-        print(cell)
-        columns -= 1
-    rows -= 1
+for i in range(cols):
+    for j in range(rows):
+        column += cell
+    print(column)
+    column = ""
